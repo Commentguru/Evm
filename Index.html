@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<meta charset="UTF-8" >
+  <title>ईवीएम मशीन</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 20px;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .button {
+      background-color: #000000;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .button:hover {
+      background-color: #333333;
+    }
+
+    .vote-counter {
+      text-align: center;
+    }
+
+    .vote-count {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>ईवीएम मशीन</h1>
+    </div>
+    <div class="content">
+      <h2>उम्मीदवार</h2>
+      <ul>
+        <li><a href="#">कांग्रेस</a></li>
+        <li><a href="#">भाजपा</a></li>
+        <li><a href="#">आम आदमी पार्टी</a></li>
+      </ul>
+      <h2>वोट डालें</h2>
+          
+      
+
+
+      
+     <input id="y"  type="radio" name="candidate" value="कांग्रेस" onchange="updateVoteCount(this)"  > कांग्रेस
+ <audio src="/storage/emulated/0/कांग्रेस.mp3"  ></audio> 
+        <input id="y" type="radio" name="candidate" value="भाजपा" onchange="updateVoteCount(this)"  > भाजप
+            <audio src="/storage/emulated/0/Text To Speech/कयद.mp3"></audio>
+        <input type="radio" name="candidate" value="आम आदमी पार्टी" onchange="updateVoteCount(this)"> आम आदमी पार्टी
+        <input type="submit" value="result" onclick="r()">
+      </form>
+      <div class="vote-counter" >
+        <p class="vote-count" align="left">0</p>
+        
+      </div>
+    </div>
+  </div>
+  <p><address>©कमेंट गुरू</address></p>
+   
+ 
+<script>
+function updateVoteCount(radioButton) {
+  // उम्मीदवार का नाम प्राप्त करें
+  var candidateName = radioButton.value;
+
+  // उम्मीदवार के लिए वोट की संख्या को बढ़ाएं
+  var voteCount = parseInt(document.querySelector(".vote-count").innerHTML);
+  voteCount++;
+
+  // वोट की संख्या को अपडेट करें
+  document.querySelector(".vote-count").innerHTML = voteCount;
+};
+</script>
+<script>
+function r(){
+
+var a="कांग्रेस";
+var b="भाजपा";
+var c="आप";
+document.write(a+"=वोट3"+"<br>"+b+"=वोट0"+"<br>"+c+"=वोट0"+"<br>"+"जिती हुई पार्टी कांग्रेस");};
+
+
+</script>
+
+<script type="text/javascript">
+const x= document.getElementById("x");
+
+// बटन पर क्लिक होने पर ऑडियो बजाएं
+x.addEventListener("click", () => {
+  // ऑडियो को बजाएं
+  document.querySelector("audio").play();
+});
+</script>
+<script type="text/javascript">
+
+const y= document.getElementById("y");
+
+// बटन पर क्लिक होने पर ऑडियो बजाएं
+y.addEventListener("click", () => {
+  // ऑडियो को बजाएं
+  y.querySelector(audio)play();
+});
+</script>
+
+
+
+</html>
